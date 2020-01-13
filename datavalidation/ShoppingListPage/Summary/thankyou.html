@@ -1,0 +1,51 @@
+<!--
+	# I, CHIRAG BARANDA, student number 000759867, certify that all code submitted is my own work;
+		#that I have not copied it from any other source.
+		#I also certify that I have not allowed my work to be copied by others.
+	#Author: CHIRAG BARANDA, 000759867
+	#Date : 1st October, 2018
+	#purpose : This page will destroy the sessoin data and provide the link for the home page
+ -->
+
+<?php
+session_start();
+session_destroy(); ?>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+	margin:0;
+	background-image: url(images/thank_you2.jpg);
+	background-repeat: no-repeat;
+    	background-attachment: fixed;
+    	background-position: center; 
+	background-size: 1024px 768px;
+	background-color: #000000;
+}
+
+.button3{
+display:inline-block;
+padding:20px 40px;
+margin:20px 20px;
+border-radius:2em;
+box-sizing: border-box;
+text-decoration:none;
+font-family:'Roboto',sans-serif;
+font-weight:400;
+color:#000000;
+text-align:center;
+
+}
+
+</style>
+</head>
+<body background-image="images/thank_you2.jpg">
+
+<form method="get" action="../../../index.html">
+                <button class="button button3" type="submit" name="HOME PAGE">HOME PAGE	</button>
+</form>
+
+
+</body>
+</html>
