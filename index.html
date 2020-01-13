@@ -1,0 +1,135 @@
+<!--
+	# I, CHIRAG BARANDA, student number 000759867, certify that all code submitted is my own work;
+		#that I have not copied it from any other source.
+		#I also certify that I have not allowed my work to be copied by others.
+	#Author: CHIRAG BARANDA, 000759867
+	#Date : 1st October, 2018
+	#purpose : This HTML file contains the form, which take 4 inputs (4text fields ) and sent it
+		   to the myShoppingList.php file to validate the the data collected from the form using regular expression.
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Store Information Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="css/util.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <!--===============================================================================================-->
+</head>
+<body>
+
+
+<div class="container-contact100">
+    <div class="contact100-map" id="google_map" data-map-x="40.722047" data-map-y="-73.986422"
+         data-pin="images/icons/map-marker.png" data-scrollwhell="0" data-draggable="1"></div>
+
+    <div class="wrap-contact100">
+        <div class="contact100-form-title" style="background-image: url(images/bg-01.jpg);">
+				<span class="contact100-form-title-1">
+					Store Information
+				</span>
+
+            <span class="contact100-form-title-2">
+					Programmed by: CHIRAG BARANDA 
+				</span>
+        </div>
+
+        <form class="contact100-form validate-form" action="datavalidation/myShoppingList.php" method="GET"> <!--  Form tag redirecting the page to the php file -->
+            <!-- Inputs from the user, Store Name,Street Name,City and Postal Code-->
+            <div class="wrap-input100 validate-input" data-validate="Store name is required">
+                <span class="label-input100">Street Name:</span>
+                <input class="input100" type="text" name="storename" placeholder="Enter full Store name"
+                       value="The 905 grocery Store">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="Valid store address is required: 123 ABC St S">
+                <span class="label-input100">Store   Address:</span>
+                <input class="input100" type="text" name="storeaddress" placeholder="Enter Store addess"
+                       value="200 Main st. S">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate="city name is required">
+                <span class="label-input100">City   Name:</span>
+                <input class="input100" type="text" name="city" placeholder="Enter City Name" value="Hamilton">
+                <span class="focus-input100"></span>
+            </div>
+
+            <div class="wrap-input100 validate-input" data-validate=Postal Code is required
+            ">
+            <span class="label-input100">Postal Code:</span>
+            <input type="text" class="input100" name="postalcode" placeholder="Enter Postal Code"
+                   value="L9P 4C9"></textarea>
+            <span class="focus-input100"> </span>
+    </div>
+
+    <div class="container-contact100-form-btn">
+        <button class="contact100-form-btn">
+						<span>
+							Submit
+							<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+						</span>
+        </button>
+    </div>
+    </form>
+</div>
+</div>
+
+
+<div id="dropDownSelect1"></div>
+
+<!--===============================================================================================-->
+<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/bootstrap/js/popper.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/daterangepicker/moment.min.js"></script>
+<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAKFWBqlKAGCeS1rMVoaNlwyayu0e0YRes"></script>
+<script src="js/map-custom.js"></script>
+<!--===============================================================================================-->
+<script src="js/main.js"></script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-23581568-13');
+</script>
+
+</body>
+</html>
